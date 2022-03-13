@@ -5,7 +5,7 @@ FROM company JOIN product
 ON company.company_id = product.fk_company_id 
 WHERE company.name = 'Stonks&Co';
 
--- 2. how many types of products products were in invoices at March 2022
+-- 2. how many types of products were in invoices at March 2022
 
 SELECT COUNT(product.name) 
 FROM product JOIN orders
